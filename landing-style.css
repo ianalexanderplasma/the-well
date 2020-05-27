@@ -10,9 +10,9 @@ p {
 }
 
 .dot {
-  height: 25px;
-  width: 25px;
-  background-color: #2752ff;
-  border-radius: 50%;
-  display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-color: #2752ff;
+	border-radius: 50%;
+	display: inline-block;
 }
