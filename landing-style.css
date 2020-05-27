@@ -6,13 +6,15 @@ h1 {
 
 p {
 	font-family: 'Karla', sans-serif;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
 .dot {
-	height: 100px;
-	width: 100px;
-	background-color: #2752ff;
-	border-radius: 50%;
-	display: inline-block;
+	height: 50px;
+    width: 50px;
+    top: 22px;
+    position: relative;
+    background-color: #2752ff;
+    border-radius: 50%;
+    display: inline-block;
 }
