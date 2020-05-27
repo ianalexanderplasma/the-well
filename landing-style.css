@@ -1,19 +1,19 @@
 h1 {
 	font-family: 'Karla', sans-serif;
-	font-size: 7vw;
+	font-size: 10vw;
 	font-weight: 700;
 	margin:0;
 }
 
 p {
 	font-family: 'Karla', sans-serif;
-	font-size: 1.2vw;
+	font-size: 2vw;
 }
 
 .dot {
-	height: 4vw;
-    width: 4vw;
-    top: 2.1vw;
+	height: 5vw;
+    width: 5vw;
+    top: 3.5vw;
     position: relative;
     background-color: #2752ff;
     border-radius: 50%;
