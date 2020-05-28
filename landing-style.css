@@ -18,6 +18,7 @@ p {
     background-color: #2752ff;
     border-radius: 50%;
     display: inline-block;
+    cursor: none;
 }
 
 .expand {
