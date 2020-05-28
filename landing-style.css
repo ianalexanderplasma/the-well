@@ -10,7 +10,7 @@ p {
 	font-size: 2vw;
 }
 
-.dot {
+#dot {
 	height: 5vw;
     width: 5vw;
     top: 3.5vw;
