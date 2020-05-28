@@ -19,3 +19,11 @@ p {
     border-radius: 50%;
     display: inline-block;
 }
+
+.expand {
+  transition: transform .5s;
+}
+
+.expand:hover {
+  transform: scale(1.5);
+}
