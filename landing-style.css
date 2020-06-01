@@ -22,13 +22,5 @@ p {
 
 .expand {
   transition: transform 2s;
-}
-
-.expand:hover {
-  transform: scale(35);
-}
-
-#dot.hover_effect {
-  transition: transform 2s;
   transform: scale(35);
 }
