@@ -24,6 +24,6 @@ p {
   transition: transform 2s;
 }
 
-.expand:hover {
+.expand:hover, .expand:focus {
   transform: scale(35);
 }
