@@ -18,13 +18,12 @@ p {
     background-color: #2752ff;
     border-radius: 50%;
     display: inline-block;
-    cursor: none;
 }
 
 .expand {
-  transition: transform .5s;
+  transition: transform 2s;
 }
 
 .expand:hover {
-  transform: scale(1.5);
+  transform: scale(35);
 }
