@@ -1,26 +1,65 @@
-h1 {
-	font-family: 'Karla', sans-serif;
-	font-size: 10vw;
-	font-weight: 700;
-	margin:0;
-}
 
 p {
-	font-family: 'Karla', sans-serif;
-	font-size: 2vw;
+  font-family: 'Karla', sans-serif;
+  font-size: 2vw;
 }
 
-#dot {
-	height: 5vw;
-    width: 5vw;
-    top: 3.5vw;
-    position: relative;
-    background-color: #2752ff;
+
+#cover:hover {
+  transition: transform .2s;
+  transform: scale(1.2);
+
+}
+
+#name {
+  font-family: 'Karla', sans-serif;
+  font-size: 12vw;
+  font-weight: 700;
+  position: absolute;
+  top: calc(50% - 7vw);
+  left: calc(50% - 32vw);
+  transition: all 3s;
+  margin:0;
+  z-index: -1;
+}
+
+.small {
+    background: #2752ff;
     border-radius: 50%;
-    display: inline-block;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: calc(50% - 3vw);
+    left: calc(50% - 7vw);
+    transition: all 2s;
+    animation-timing-function: linear;
+    cursor: pointer;
 }
 
-.expand {
-  transition: transform 2s;
-  transform: scale(35);
+.big {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-top: 0;
+    left: 0;
+    margin-left: 0;
+    border-radius: 0%;
+}
+
+#zoom {
+  z-index: -1;
+}
+
+#content {
+  text-align: center;
+  display: none;
+}
+#content p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: #fff;
+  margin:0;
+  position: relative;
+  top: 50vh;
 }
