@@ -24,6 +24,11 @@ p {
   transition: transform 2s;
 }
 
-.expand:hover, .expand:focus {
+.expand:hover {
+  transform: scale(35);
+}
+
+#dot.hover_effect {
+  transition: transform 2s;
   transform: scale(35);
 }

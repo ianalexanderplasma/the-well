@@ -4,11 +4,26 @@
 	<title>THE WELL</title>
 	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="landing-style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div style="text-align: center; margin-top: 30vh;">
 		<h1>THE&nbsp;<span id="dot" class="expand">&nbsp;</span>&nbsp;WELL</h1>
 <!-- 		<p>A peer-to-peer coaching community built on reciprocity.</p> -->
 	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('.hover').on('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
+	
+</script>
+
+
 </body>
 </html>
+
+
