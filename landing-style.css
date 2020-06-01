@@ -4,11 +4,9 @@ p {
   font-size: 2vw;
 }
 
-
 #cover:hover {
   transition: transform .2s;
   transform: scale(1.2);
-
 }
 
 #name {
@@ -54,6 +52,7 @@ p {
   text-align: center;
   display: none;
 }
+
 #content p {
   font-family: 'Karla', sans-serif;
   font-weight: 500;
