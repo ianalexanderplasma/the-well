@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jitsi Test</title>
+	<title>The Well - Live</title>
 	<script src='https://meet.jit.si/external_api.js'></script>
 </head>
 
@@ -21,6 +21,10 @@
 		font-family: 'Karla', sans-serif;
 
 	}
+
+	#largeVideoContainer {
+		background-color: #000 !important;
+	}
 	
 </style>
 
@@ -34,11 +38,17 @@
 
 <script type="text/javascript">
 
-var primary_coach = 'Ian';
-var secondary_coach = 'Tim';
-var coachee = 'Sara';
-var time = new Date().getTime();
-var meeting_id = 'well-'+primary_coach+secondary_coach+coachee+time; // should add the person's account id or name to this string
+// create a UUID to help create a unique URL
+function uuidv4() {
+  return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  );
+}
+
+var username  = 'Ian'
+var uuid = uuidv4();
+var meeting_id = 'well-'+uuid;
+
 console.log(meeting_id);
 
 const domain = 'meet.jit.si';
@@ -59,13 +69,12 @@ api.addEventListener('participantRoleChanged', function(event) {
 });
 
 // join a protected channel
-api.on('passwordRequired', function ()
-{
-    api.executeCommand('password', meeting_id);
+api.on('passwordRequired', function (){
+    api.executeCommand('password', meeting_id);		// we could make this an actual pass instead  of the meeting id but seems like a decent roadblock to prevent access
 });
 
 // set my display name
-api.executeCommand('displayName', 'Ian');
+api.executeCommand('displayName', username);
 
 // set the subject of the conference.
 api.executeCommand('subject', 'The Well');
