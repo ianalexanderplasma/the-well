@@ -38,20 +38,18 @@
 
 <script type="text/javascript">
 
-// we use a UUID to create a unique URL like: https://thewell.network/meet?meeting=well-4ff2dfa7-6bf9-4142-afd7-0e18be63e068
-
-// we add that unique URL to the meeting invite
-//  they visit the URL and we  use the meeting param to constructor the Jitsi iframe
-
+// We use a UUID to create a unique param and add it to the calendar invite
+// Example: https://thewell.network/meet?id=well-4ff2dfa7-6bf9-4142-afd7-0e18be63e068
 
 // Get the param from the URL
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const meeting_id = urlParams.get('meeting')
+const meeting_id = urlParams.get('id')
 
 // Get user info to set display name
 var username  = 'Ian'
 
+// Use the meeting param to construct the Jitsi iframe
 const domain = 'meet.jit.si';
 const options = {
     roomName: meeting_id,
@@ -62,31 +60,30 @@ const options = {
 
 const api = new JitsiMeetExternalAPI(domain, options);
 
-// set new password for channel
+// Set new password for channel
 api.addEventListener('participantRoleChanged', function(event) {
     if (event.role === "moderator") {
         api.executeCommand('password', 'well');
     }
 });
 
-// join a protected channel
+// Join a protected channel
 api.on('passwordRequired', function (){
     api.executeCommand('password', meeting_id);		// we could make this an actual pass instead  of the meeting id but seems like a decent roadblock to prevent access
 });
 
-// set my display name
-api.executeCommand('displayName', username);
-
-// set the subject of the conference.
+// Set the subject of the conference
 api.executeCommand('subject', 'The Well');
 
-// invite new participants to the call with the following API function:
+// Set my display name
+api.executeCommand('displayName', username);
+
+// Invite new participants to the call with the following API function:
 // api.invite([ {...}, {...}, {...} ]).then(() => {
 //     // success
 // }).catch(() => {
 //     // failure
 // });
-
 
 </script>
 </html>
