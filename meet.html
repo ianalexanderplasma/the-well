@@ -34,14 +34,16 @@
 
 <script type="text/javascript">
 
-var username = 'Ian';
+var primary_coach = 'Ian';
+var secondary_coach = 'Tim';
+var coachee = 'Sara';
 var time = new Date().getTime();
-var meeting_id = 'well-'+time;
+var meeting_id = 'well-'+primary_coach+secondary_coach+coachee+time; // should add the person's account id or name to this string
 console.log(meeting_id);
 
 const domain = 'meet.jit.si';
 const options = {
-    roomName: 'well',
+    roomName: meeting_id,
     width: '100%',
     height: '100%',
     parentNode: document.querySelector('#meet')
@@ -59,7 +61,7 @@ api.addEventListener('participantRoleChanged', function(event) {
 // join a protected channel
 api.on('passwordRequired', function ()
 {
-    api.executeCommand('password', 'well');
+    api.executeCommand('password', meeting_id);
 });
 
 // set my display name
