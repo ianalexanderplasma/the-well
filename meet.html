@@ -50,7 +50,7 @@ const meeting_id = urlParams.get('id');
 var username  = 'Ian';
 
 // Use the meeting param to construct the Jitsi iframe
-const domain = 'meet.jit.si';
+const domain = 'tap.thewell.network';
 const options = {
     roomName: meeting_id,
     width: '100%',
@@ -60,17 +60,17 @@ const options = {
 
 const api = new JitsiMeetExternalAPI(domain, options);
 
-// Set new password for channel
-api.addEventListener('participantRoleChanged', function(event) {
-    if (event.role === "moderator") {
-        api.executeCommand('password', 'well');
-    }
-});
+// // Set new password for channel
+// api.addEventListener('participantRoleChanged', function(event) {
+//     if (event.role === "moderator") {
+//         api.executeCommand('password', 'well');
+//     }
+// });
 
-// Join a protected channel
-api.on('passwordRequired', function (){
-    api.executeCommand('password', meeting_id);		// we could make this an actual pass instead  of the meeting id but seems like a decent roadblock to prevent access
-});
+// // Join a protected channel
+// api.on('passwordRequired', function (){
+//     api.executeCommand('password', meeting_id);		// we could make this an actual pass instead  of the meeting id but seems like a decent roadblock to prevent access
+// });
 
 // Set the subject of the conference
 api.executeCommand('subject', 'The Well');
