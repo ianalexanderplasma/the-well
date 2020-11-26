@@ -1,5 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
 #name {
   font-family: 'Karla', sans-serif;
+}
+
+#app-container {
+  display: none;
 }
 
 .btn {
@@ -128,4 +142,19 @@
 @keyframes fade-in {
   from {opacity:0}
   to {opacity:1}
+}
+
+.pulse-blue {
+  animation: borderPulseBlue 2000ms infinite ease-out;
+}
+
+
+/* Declare border pulse animation */
+@keyframes borderPulseBlue {
+  0% {
+    box-shadow: inset 0px 0px 0px 5px rgba(39,82,255,.4), 0px 0px 0px 0px rgba(39,82,255,1);
+  }
+  100% {
+    box-shadow: inset 0px 0px 0px 3px rgba(39,82,255,.2), 0px 0px 0px 10px rgba(39,82,255,0);
+  }
 }

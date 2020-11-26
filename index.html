@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="py-10 md:pt-16 md:pb-10 fade-in">
+<div class="pt-10 md:pt-16 md:pt-10 fade-in">
   <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center">
       <h1 id="name" class="text-5xl md:text-7xl font-bold mb-0">THE
@@ -71,18 +71,21 @@
       <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10">
         <div class="flex justify-center">
           <div class="text-center">
-            <a class="btn btn-blue text-xl">
+            <a href="https://forms.gle/PgeZem7NWJNAQFAQ7" class="btn btn-blue text-xl pulse-blue">
               Apply for free membership
             </a>
             <p class="mt-2 text-sm text-gray-500">
-            	Application takes less than 3 minutes.
+            	Application takes less than 5 minutes.
             </p>
           </div>
         </div>
       </dl>
     </div>
+
   </div>
 </div>
+
+
 
 </body>
 <script type="text/javascript">
@@ -97,6 +100,12 @@ setInterval(function(){
 	var water = document.getElementById("water");
 	water.style.transform='translate(0'+','+(100-percent)+'%)';
 }, 100);
+
+function showApplication(){
+	var appContainer = document.getElementById('app-container')
+	appContainer.style.display = 'block';
+	setTimeout(function(){ appContainer.scrollIntoView(); }, 100);
+}
 
 </script>
 </html>
