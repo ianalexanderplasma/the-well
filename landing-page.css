@@ -144,7 +144,7 @@ html, body {
   to {opacity:1}
 }
 
-.pulse-blue {
+.pulse-blue:hover {
   animation: borderPulseBlue 2000ms infinite ease-out;
 }
 
