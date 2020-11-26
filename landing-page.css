@@ -37,6 +37,14 @@
   border-radius: 100%;
   overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  .orb {
+  height: 1.5rem;
+  width: 1.5rem;
+  }
+}
+
 .orb .percent {
   position: absolute;
   left: 0;
