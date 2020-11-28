@@ -8,9 +8,6 @@ module.exports = {
       // './resources/views/**/*.blade.php',
       // './resources/js/**/*.vue'
   ],
-  plugins: [
-    require('@tailwindcss/ui'),
-  ],
   theme: {
     extend: {
       fill: theme => ({
@@ -70,7 +67,4 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [
-    require('@tailwindcss/custom-forms'),
-  ],
 }
