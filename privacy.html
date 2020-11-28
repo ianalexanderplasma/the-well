@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="bg-gray-100">
+<head>
+	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Privacy | THE WELL</title>
+  <link rel="stylesheet" type="text/css" href="tailwind.css">
+  <link rel="stylesheet" type="text/css" href="landing-page.css">
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="bg-white">
+  <nav class="bg-white text-black"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex items-center justify-between h-16"><div class="md:block"><div class="flex items-baseline -mr-2 md:mr-5"><a href="/browse" class="link-blue font-semibold">Browse</a></div></div> <div class="flex items-center"><a href="/dashboard" class="no-underline"><h2 class="text-black tracking-wider text-3xl font-medium mb-0">THE<span class="text-blue-500 text-2xl px-1 align-text-bottom">●</span>WELL</h2></a></div> <div class="hidden md:block"><div class="ml-4 flex items-center md:ml-6"><div class="ml-3 relative"><div><button id="user-menu" aria-label="User menu" aria-haspopup="true" class="max-w-xs flex items-center text-sm rounded-full text-white focus:outline-none focus:shadow-solid"><div class="w-10 h-10"><div><img src="/storage/jBTWklsoUjPaDGLYHQtYfw3Dp8U2FHxsDXO4sthe.png" alt="profile" class="w-full h-full rounded-full"></div></div></button></div> <div class="fade-in origin-top-right absolute z-10 right-0 mt-2 w-48 rounded-md shadow-lg hidden"><div role="menu" aria-orientation="vertical" aria-labelledby="user-menu" class="rounded bg-white shadow-xs"><a role="menuitem" href="/profile" class="menu-item">Profile</a> <a role="menuitem" href="/dashboard" class="menu-item">Dashboard</a> <a role="menuitem" href="/settings" class="menu-item">Settings</a> <a href="/logout" role="menuitem" class="menu-item">Sign out</a></div></div></div></div></div> <div class="-mr-2 flex md:hidden"><button class="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-black hover:bg-gray-200 focus:outline-none focus:bg-gray-200 focus:text-white"><svg stroke="#000" fill="none" viewBox="0 0 24 24" class="h-6 w-6 block"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> <svg stroke="#000" fill="none" viewBox="0 0 24 24" class="h-6 w-6 hidden"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div></div></div> <div class="md:hidden hidden"><div class="p-4 shadow-lg space-y-2"><a href="/profile" class="menu-item">Profile</a> <a href="/dashboard" class="menu-item">Dashboard</a> <a href="/settings" class="menu-item">Settings</a> <a href="/logout" class="menu-item">Sign out</a></div></div></nav>
+  
+
+<!-- <div class="py-10 md:py-16 fade-in">
+  <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h1 id="name" class="text-5xl md:text-7xl font-bold mb-0">THE
+		<div id="loader" class="inline-block">
+		    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+		        <symbol id="wave">
+		            <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+		            <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+		            <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+		            <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+		        </symbol>
+		    </svg>
+		    <div class="orb">
+		        <div id="water" class="water">
+		            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+		                <use xlink:href="#wave"></use>
+		            </svg>
+		            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+		                <use xlink:href="#wave"></use>
+		            </svg>
+		        </div>
+		    </div>
+		</div>
+      WELL</h1>
+      <p class="mt-4 mb-12 max-w-2xl text-sm text-black md:text-xl md:text-gray-700 mx-auto">
+      	A global coaching community built on reciprocity.
+      </p>
+    </div>
+
+    <div class="my-10 md:my-16">
+      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10">
+        <div class="flex">
+          <div class="ml-4">
+            <dt class="text-2xl leading-6 font-bold text-gray-900">
+              Get better coaching.
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+            	Access a world-wide network that is eager to help you develop your ideas, discover new perspectives, and reflect on your experiences.
+            </dd>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="ml-4">
+            <dt class="text-2xl leading-6 font-bold text-gray-900">
+              Get better <span class="italic">at</span> coaching.
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              Ask better questions, offer generous feedback, and propel people forward while learning alongside coaches dedicated to developing our craft.
+            </dd>
+          </div>
+        </div>
+      </dl>
+    </div>
+
+    <div class="">
+      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10">
+        <div class="flex justify-center">
+          <div class="text-center">
+            <a href="https://forms.gle/PgeZem7NWJNAQFAQ7" class="btn btn-blue text-xl">
+              Apply for free membership
+            </a>
+            <p class="mt-2 text-sm text-gray-500">
+            	Application takes less than 5 minutes.
+            </p>
+          </div>
+        </div>
+      </dl>
+    </div>
+
+  </div>
+</div> -->
+
+
+<footer class="bg-gray-100">
+  <div class="container mx-auto py-8">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/4 my-2 text-center">
+        <a href="/faq" class="hover:underline text-gray-600 hover:text-orange-500">FAQ</a>
+      </div>
+      <div class="w-full md:w-1/4 my-2 text-center">
+        <a href="/contact" class="hover:underline text-gray-600 hover:text-orange-500">Contact</a>
+      </div>
+      <div class="w-full md:w-1/4 my-2 text-center">
+        <a href="/privacy" class="hover:underline text-gray-600 hover:text-orange-500">Privacy</a>
+      </div>
+      <div class="w-full md:w-1/4 my-2 text-center">
+        <a href="/terms" class="hover:underline text-gray-600 hover:text-orange-500">Terms</a>
+      </div>
+  </div>
+</footer>
+
+
+
+</body>
+<script type="text/javascript">
+
+	var percent = 0;
+	
+var interval = setInterval(function(){
+	if (percent < 100){
+		percent += 2;
+	} else ( clearInterval(interval))
+	var water = document.getElementById("water");
+	water.style.transform='translate(0'+','+(100-percent)+'%)';
+}, 100);
+
+function showApplication(){
+	var appContainer = document.getElementById('app-container')
+	appContainer.style.display = 'block';
+	setTimeout(function(){ appContainer.scrollIntoView(); }, 100);
+}
+
+</script>
+</html>
+
+
