@@ -92,10 +92,10 @@
 
 	var percent = 0;
 	
-setInterval(function(){
+var interval = setInterval(function(){
 	if (percent < 100){
 		percent += 2;
-	}
+	} else ( clearInterval(interval))
 	console.log(percent);
 	var water = document.getElementById("water");
 	water.style.transform='translate(0'+','+(100-percent)+'%)';
