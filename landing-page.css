@@ -42,7 +42,6 @@ html, body {
   cursor: pointer;
 }
 .orb {
-  z-index: -1;
   height: 2rem;
   width: 2rem;
   top: 10px;
