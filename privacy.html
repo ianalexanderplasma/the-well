@@ -109,25 +109,6 @@
 
 
 </body>
-<script type="text/javascript">
-
-	var percent = 0;
-	
-var interval = setInterval(function(){
-	if (percent < 100){
-		percent += 2;
-	} else ( clearInterval(interval))
-	var water = document.getElementById("water");
-	water.style.transform='translate(0'+','+(100-percent)+'%)';
-}, 100);
-
-function showApplication(){
-	var appContainer = document.getElementById('app-container')
-	appContainer.style.display = 'block';
-	setTimeout(function(){ appContainer.scrollIntoView(); }, 100);
-}
-
-</script>
 </html>
 
 
