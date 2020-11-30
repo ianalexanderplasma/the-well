@@ -5,7 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 html, body {
   margin:0;
   padding:0;
@@ -52,6 +51,14 @@ html, body {
   background: #e2e8f0;
   border-radius: 100%;
   overflow: hidden;
+}
+
+.link-blue {
+  @apply text-blue-500 no-underline;
+}
+
+.link-blue:hover {
+  @apply text-blue-500 underline;
 }
 
 @media screen and (max-width: 768px) {
