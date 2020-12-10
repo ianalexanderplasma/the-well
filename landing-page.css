@@ -43,7 +43,7 @@ html, body {
 .orb {
   height: 2.5rem;
   width: 2.5rem;
-  top: 15px;
+  top: 16px;
   left: 20px;
   position: relative;
   -webkit-transform: translate(-50%, -50%);
@@ -65,8 +65,8 @@ html, body {
   .orb {
     height: 1.7rem;
     width: 1.7rem;
-    top: 10px;
-    left: 12px;
+    top: 11px;
+    left: 13px;
   }
 }
 
