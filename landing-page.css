@@ -41,10 +41,10 @@ html, body {
   cursor: pointer;
 }
 .orb {
-  height: 2rem;
-  width: 2rem;
-  top: 10px;
-  left: 15px;
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 15px;
+  left: 20px;
   position: relative;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -63,8 +63,10 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .orb {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  top: 10px;
+  left: 15px;
   }
 }
 
